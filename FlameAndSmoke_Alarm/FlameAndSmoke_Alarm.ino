@@ -46,7 +46,7 @@ void loop()
   if(smokeDetected && flameDetected)
   {
     lcd.setCursor(0,0);
-    lcd.print("WARNING!");
+    lcd.print("WARNING!RUN AWAY");
     lcd.setCursor(0,1);
     lcd.print("FIRE & SMOKE!");
     tone(buzzer,1000);
@@ -54,7 +54,7 @@ void loop()
   else if(smokeDetected)
   {
     lcd.setCursor(0,0);
-    lcd.print("WARNING!");
+    lcd.print("WARNING!RUN AWAY");
     lcd.setCursor(0,1);
     lcd.print("SMOKE DETECTED");
     tone(buzzer,1000);
@@ -62,7 +62,7 @@ void loop()
   else if(flameDetected)
   {
     lcd.setCursor(0,0);
-    lcd.print("WARNING!");
+    lcd.print("WARNING!RUN AWAY");
     lcd.setCursor(0,1);
     lcd.print("FIRE DETECTED!");
     tone(buzzer,1000);
@@ -70,7 +70,7 @@ void loop()
   else
   {
     lcd.setCursor(0,0);
-    lcd.print("NOW IS SAFE");
+    lcd.print("NOTIHNG HAPPENED");
     lcd.setCursor(0,1);
     lcd.print("No Fire/Smoke");
     noTone(buzzer);
